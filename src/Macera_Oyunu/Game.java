@@ -8,7 +8,7 @@ public class Game {
 
     public void start() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Macera oyununa hoş geldiniz ");
+        System.out.println("Macera oyununa hoş geldiniz..... ");
         System.out.print("İsminizi giriniz : ");
         String PlayerName=scan.nextLine();
         Player player = new Player(PlayerName);
