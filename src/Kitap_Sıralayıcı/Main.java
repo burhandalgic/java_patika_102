@@ -23,7 +23,6 @@ public class Main {
         });
 
 
-
         System.out.println("Kitap ismine göre sıralama");
         for (Book x: books1 ){
             System.out.println(x.getName());
