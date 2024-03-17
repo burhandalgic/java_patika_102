@@ -48,7 +48,6 @@ public abstract class Account {
         }else System.out.println("Tanımlı sigorta bulunamadı ! -----------------");
 
     }
-
     public User getUser() {
         return user;
     }
