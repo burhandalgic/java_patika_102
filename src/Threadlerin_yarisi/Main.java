@@ -10,7 +10,7 @@ public class Main {
 
         Data data = new Data();
 
-        Finder finder=new Finder(data);
+        Finder finder = new Finder(data);
 
 
         Thread t1 = new Thread(finder);
@@ -22,14 +22,16 @@ public class Main {
         t3.start();
         t4.start();
 
-
-        Thread.sleep(100);
-        System.out.println(" çift rakamların sayısı : " + data.getListEven().size());
-        System.out.println(" tek rakamların sayısı : " + data.getListOdd().size());
-
-
+        while (true) {
+            if (!t1.isAlive() && !t2.isAlive() && !t3.isAlive() && !t4.isAlive()) {
+                System.out.println(" çift rakamların sayısı : " + data.getListEven().size());
+                System.out.println(" tek rakamların sayısı : " + data.getListOdd().size());
+                break;
+            }
+        }
+    }
 
 
     }
 
-}
+
